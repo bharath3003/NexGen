@@ -36,46 +36,49 @@ def get_similarity(original_text, new_text):
 
 # Main function to render the app
 def main():
-    st.sidebar.title('Navigation')
-    page = st.sidebar.radio('Go to', ['See Profile', 'Practice Questions', 'Question Paper'])
+    st.title('Practice Questions')
+    difficulty_level = st.selectbox('Select difficulty level:', ['Easy', 'Medium', 'Hard'])
 
-    if page == 'See Profile':
-        st.title('User Profile')
-        # Add your profile details here
+    # Load questions and answers from file based on selected difficulty level
+    questions_answers = read_questions_answers(difficulty_level)
 
-    elif page == 'Practice Questions':
-        st.title('Practice Questions')
-        difficulty_level = st.selectbox('Select difficulty level:', ['Easy', 'Medium', 'Hard'])
+    # Display the selected difficulty level
+    st.write(f"**Difficulty Level:** {difficulty_level}")
 
-        # Load questions and answers from file based on selected difficulty level
-        questions_answers = read_questions_answers(difficulty_level)
+    # Initialize score and similarity_scores variables
+    score = 0
+    similarity_scores = []
 
-        # Display the selected difficulty level
-        st.write(f"**Difficulty Level:** {difficulty_level}")
+    # Clear session_state for user_answers when switching difficulty levels
+    if 'difficulty_level' in st.session_state and st.session_state['difficulty_level'] != difficulty_level:
+        st.session_state['user_answers'] = [""] * 5
 
-        # Initialize score variable
-        score = 0
+    st.session_state['difficulty_level'] = difficulty_level
 
-        # Store user answers and similarity scores
-        user_answers = []
-        similarity_scores = []
+    # Store user answers and similarity scores using st.session_state
+    if 'user_answers' not in st.session_state:
+        st.session_state['user_answers'] = [""] * 5  # Initialize with 5 empty answers
 
-        # Display questions and answer section
-        for i, (question, answer) in enumerate(questions_answers.items()):
+    # Display questions and answer section
+    for i, (question, answer) in enumerate(list(questions_answers.items())[:5]):  # Display only 5 questions
+        st.write(f"**Question {i+1}:** {question}")
+        user_answer = st.text_input(label="Your Answer:", key=f"answer_{i}",
+                                    value=st.session_state['user_answers'][i])  # Get answer from session_state
+        st.session_state['user_answers'][i] = user_answer  # Update session_state
+
+    if st.button("Submit Answers"):
+        # Calculate similarity scores and display correct answers
+        for i, (question, answer) in enumerate(list(questions_answers.items())[:5]):
+            similarity_scores.append(get_similarity(answer, st.session_state['user_answers'][i]))
             st.write(f"**Question {i+1}:** {question}")
-            user_answer = st.text_input(label="Your Answer:", key=f"answer_{i}")  # Unique key for each text input
-            user_answers.append(user_answer)
-            similarity_scores.append(get_similarity(answer, user_answer))
+            st.write(f"**Your Answer:** {st.session_state['user_answers'][i]}")
+            st.write(f"**Correct Answer:** {answer}")
+            st.write("--------")
 
-        if st.button("Submit Answers"):
-            # Calculate score
-            score = sum(score == 1.0 for score in similarity_scores)
-            st.write(f"**Your Score:** {score}/{len(questions_answers)}")
-
-    elif page == 'Question Paper':
-        st.title('Question Paper')
-        # Implement the question paper generation here
+        # Calculate score out of 5
+        score = sum(score == 1.0 for score in similarity_scores)
+        score = min(5, max(0, score * 5))  # Limit score to be between 0 and 5 without rounding
+        st.write(f"**Your Score:** {score}/5")
 
 if __name__ == "__main__":
     main()
-    
