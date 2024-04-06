@@ -5,13 +5,10 @@ Write a note on: The Greek war of independence ; Greece had been part of the Ott
 # Medium
 The main function of the Prussian Zollverein was to ;abolish the tariff barrier;
 Which of the following group of powers collectively defeated Napoleon? ;Austria, Prussia, Russia, Britain;
-Which of the following countries is considered as the ‘cradle of civilization’? ;Greece;
 The Treaty of Vienna signed in 1815 ;brought the conservative regimes back to power;
-Romanticism refers to a ;cultural movement;
-Who among the following was proclaimed the first King of United Italy? ;Victor Emannuel II;
 # Easy
 Who, among the following, hosted the Congress at Vienna in 1815. ;Duke Metternich
-Which one of the following is true about the ‘Treaty of Constantinople’ in 1832. ;It recognised Greece as an independent nation
-Who among the following formed the secret society called ‘Young Italy’. ;Giuseppe Mazzini
+Who formed the secret society called Young Italy. ;Giuseppe Mazzini
 Which one of the following types of government was functioning in France before the revolution of 1789? ;Monarchy
-Which one of the following statements is false regarding the Act of Union 1707? ;It was an agreement between England and Ireland
+Which of the following countries is considered as the cradle of civilization? ;Greece;
+Who among the following was proclaimed the first King of United Italy? ;Victor Emannuel II;

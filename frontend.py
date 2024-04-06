@@ -41,31 +41,46 @@ def get_similarity(original_text, new_text):
 
 # Main function to render the app
 def main():
-    st.title('Personalized Learning Platform')
-    st.subheader('Tailored Question Papers')
+    st.sidebar.title('Navigation')
+    page = st.sidebar.radio('Go to', ['See Profile', 'Practice Questions', 'Question Paper'])
     
-    # Load questions and answers from file
-    filename = "questions_answers.txt"
-    questions_answers = read_questions_answers(filename)
+    if page == 'See Profile':
+        st.title('User Profile')
+        # Add your profile details here
     
-    # Display dropdown for selecting difficulty level
-    difficulty_level = st.selectbox('Select difficulty level:', ['Easy', 'Medium', 'Hard'])
-    
-    # Display the selected difficulty level
-    st.write(f"**Difficulty Level:** {difficulty_level}")
-    
-    # Display dropdown for selecting question
-    selected_question = st.selectbox('Select question:', list(questions_answers[difficulty_level].keys()))
-    
-    # Display the selected question
-    st.write(f"**Question:** {selected_question}")
-    
-    # Input field for student's answer
-    user_answer = st.text_input(label="Your Answer:")
-    if st.button("Check Similarity"):
-        correct_answer = questions_answers[difficulty_level].get(selected_question, "")
-        similarity_score = get_similarity(correct_answer, user_answer)
-        st.write(f"Similarity with correct answer: {similarity_score}")
+    elif page == 'Practice Questions':
+        st.title('Practice Questions')
+        difficulty_level = st.selectbox('Select difficulty level:', ['Easy', 'Medium', 'Hard'])
+
+        # Load questions and answers from file
+        filename = "questions_answers.txt"
+        questions_answers = read_questions_answers(filename)
+
+        # Display the selected difficulty level
+        st.write(f"**Difficulty Level:** {difficulty_level}")
+
+        # Initialize score variable
+        score = 0
+
+        # Store user answers and similarity scores
+        user_answers = []
+        similarity_scores = []
+
+        # Display questions and answer section
+        for i, (question, answer) in enumerate(questions_answers[difficulty_level].items()):
+            st.write(f"**Question {i+1}:** {question}")
+            user_answer = st.text_input(label="Your Answer:", key=f"answer_{i}")  # Unique key for each text input
+            user_answers.append(user_answer)
+            similarity_scores.append(get_similarity(answer, user_answer))
+
+        if st.button("Submit Answers"):
+            # Calculate score
+            score = sum(score == 1.0 for score in similarity_scores)
+            st.write(f"**Your Score:** {score}/{len(questions_answers[difficulty_level])}")
+
+    elif page == 'Question Paper':
+        st.title('Question Paper')
+        # Implement the question paper generation here
 
 if __name__ == "__main__":
     main()
