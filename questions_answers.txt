@@ -1,14 +1,34 @@
-# Hard
-Write a note on: Giuseppe Mazzini ; During the 1830s, Giuseppe Mazzini had sought to put together a coherent programme for the unitary Italian Republic. He had also formed a secret society called ‘Young Italy’ for the dissemination of his goals ;
-Write a note on: Count Camillo de Cavour ; Led the movement to unify Italy. He was neither a revolutionary nor a democrat. Through a tactful diplomatic alliance engineered by Cavour, Sardinia-Piedmont succeeded in defeating the Austrian forces in 1859 ;
-Write a note on: The Greek war of independence ; Greece had been part of the Ottoman Empire since the fifteenth century. The growth of revolutionary nationalism in Europe sparked off a struggle for independence amongst the Greeks, which began in 1821. Poets and artists lauded Greece as the cradle of European civilisation and mobilised public opinion to support its struggle against a Muslim empire. Nationalists in Greece got support from other Greeks living in exile and also from many West Europeans, who had sympathies for ancient Greek culture. Finally, the Treaty of Constantinople of 1832 recognised Greece as an independent nation ;
-# Medium
-The main function of the Prussian Zollverein was to ;abolish the tariff barrier;
-Which of the following group of powers collectively defeated Napoleon? ;Austria, Prussia, Russia, Britain;
-The Treaty of Vienna signed in 1815 ;brought the conservative regimes back to power;
-# Easy
-Who, among the following, hosted the Congress at Vienna in 1815. ;Duke Metternich
-Who formed the secret society called Young Italy. ;Giuseppe Mazzini
-Which one of the following types of government was functioning in France before the revolution of 1789? ;Monarchy
-Which of the following countries is considered as the cradle of civilization? ;Greece;
-Who among the following was proclaimed the first King of United Italy? ;Victor Emannuel II;
+#easy
+Who, among the following, hosted the Congress at Vienna in 1815;Duke Metternich
+Which one of the following is true about the ‘Treaty of Constantinople’ in 1832.;It recognised Greece as an independent nation
+Who among the following formed the secret society called ‘Young Italy’;Giuseppe Mazzini
+Which one of the following types of government was functioning in France before the revolution of 1789?;Monarchy
+Which one of the following statements is false regarding the Act of Union 1707?;It was an agreement between England and Ireland
+Who restored the Bourbon dynasty in France after the Napoleonic wars?;Conservatives 
+What type of governments were set up in Europe in 1815?;Autocratic 
+What did the Vienna Congress aim to undo in Europe? ;Changes from the Napoleonic wars 
+Who led the liberal revolution in France in July 1830?;Revolutionaries
+What did the Grimm Brothers collect for nation-building?;Folktales 
+#medium 
+Who were the conservative regimes set up in 1815 and how did they control dissent?;Autocratic governments that imposed censorship laws to curb criticism
+What changes were made in Europe by the Vienna Congress?;Redrawing of territorial boundaries and establishment of conservative regimes 
+What rights were granted by the National Assembly during the Republic proclamation in France?;Suffrage to adult males above 21 and the right to work 
+What triggered the weavers' revolt in Silesia in 1845?;Drastic reduction in payments by contractors
+How did the Grimm Brothers contribute to nation-building?;Through their collection of folktales 
+What was the significance of the Club of Thinkers caricature from c. 1820?;Depicting restrictions on freedom of speech and thought
+Which countries were involved in the Greek war of independence?;Greece and the Ottoman Empire 
+What was the role of Giuseppe Mazzini in nationalist struggles?;Advocate for Italian unification
+How did the French revolutionaries create a sense of collective identity among the French people?;Through symbols like the tricolor flag and national anthem
+Who were Marianne and Germania in nationalist symbolism?;Personifications of France and Germany
+#hard
+How did the formation of a customs union in 1834 impact Germany?;The customs union, or zollverein, abolished tariff barriers and reduced currencies to two, promoting economic unity .
+What characterized the spirit of conservatism in European governments post-1815?;Conservatives aimed to preserve traditional institutions like monarchy and church while recognizing the benefits of modernization .
+What role did liberal-nationalists play in the revolutions of 1830-1848?;They led uprisings against conservative regimes, aiming for liberty, freedom, and the creation of nation-states .
+How did the Treaty of Vienna of 1815 reshape Europe after the Napoleonic wars?;It restored Bourbon dynasty in France, set up new states to prevent French expansion, and aimed to create a new conservative order .
+What challenges did merchants face in pre-1834 Germany regarding economic exchange?;They had to navigate through numerous customs barriers with varying duties and measurements, hindering trade .
+What impact did the July Revolution of 1830 in France have on Europe?;It inspired uprisings in other regions like Belgium, leading to the establishment of a constitutional monarchy .
+How did the fear of repression drive liberal-nationalists in the years following 1815?;It led to the formation of secret societies to train revolutionaries and spread ideas opposing monarchical forms .
+What were the main goals of the conservative regimes established after 1815?;To preserve traditional institutions, strengthen monarchies, and undo changes from the Napoleonic era .
+How did the memory of the French Revolution inspire liberals despite the rise of conservatism?;Liberals championed issues like freedom of the press and opposed the new conservative order .
+What economic interests and developments contributed to national unification in Germany?;The customs union, railway network, and economic nationalism stimulated mobility and strengthened nationalist sentiments
+
